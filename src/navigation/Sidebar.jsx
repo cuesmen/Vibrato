@@ -33,6 +33,8 @@ export default function Sidebar({ open, onClose }) {
         <SidebarButton Title="File Storage" Icon={<MdStorage/>} GoTo="/filestorage" onClose={onClose} />
         <SidebarButton Title="Analisi" Icon={<SiGoogleanalytics/>} GoTo="/analysis" onClose={onClose} />
       </div>
+
+      <button onClick={handleLogout}>Logout</button>
     </div>
   );
 }
