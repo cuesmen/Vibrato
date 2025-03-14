@@ -1,0 +1,30 @@
+.input_icon{
+    color: var(--primary-color-darker);
+    font-size: 23px;
+}
+
+.input_main{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    padding: 7px;
+    color: rgb(17, 17, 17);
+    width: 100%;
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 10px;
+}
+
+.input_main input{
+    background-color: white;
+    border: none;
+    width: 100%;
+    color: rgb(19, 19, 19);
+}
+
+
+.input_main input:focus{
+    border: none;
+    outline: none; 
+    transition: all 0.3s ease;
+  }

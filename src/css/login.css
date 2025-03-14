@@ -1,0 +1,59 @@
+.Login_MainDiv{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.Login_LeftPart{
+    background-color: rgb(255, 255, 255);
+    width: 55%;
+    color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login_RightPart{
+    background-color: rgb(224, 224, 224);
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login_RightPart img{
+    width: 70%;
+}
+
+.Login_LeftPart_Form{
+    background-color: red;
+    width: 70%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.151);
+}
+
+.Login_LeftPart_Form p{
+    font-size: 17px;
+}
+
+.Login_LeftPart_Form h1{
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.Login_LeftPart_Form form button{
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color:white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.Login_LeftPart_Form form button:hover{
+    background-color: var(--primary-color-darker);
+    transition: all 0.3s ease;
+}
