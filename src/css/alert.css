@@ -1,0 +1,143 @@
+.Alert_MainDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+.Alert_Error{
+    background-color: rgb(201, 28, 28);
+}
+.Alert_Warning{
+    background-color: rgb(206, 188, 26);
+}
+.Alert_Success{
+    background-color: rgb(22, 161, 64);
+}
+
+.Alert_MainDiv_Btn{
+    position: absolute;
+    top:5px;
+    right:5px;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    color:black;
+}
+
+.Alert_MainDiv_Icon{
+    font-size: 50px;
+}
+
+.Alert_MainDiv_Image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: auto;
+    overflow: hidden;
+}
+
+.Alert_MainDiv_Image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.Alert_MainDiv_Title{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 5px;;
+}
+
+.Alert_MainDiv_Description{
+    padding-top: 5px;
+}
+
+
+.confirm_modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+}
+
+.confirm_modal_overlay input{
+    margin-bottom: 20px;
+}
+
+.startup_modal_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.confirm_modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.confirm_modal h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.confirm_modal p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.confirm_modal div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.startup_maindiv{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.295);
+}
+
+.startup_maindiv_title{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.startup_maindiv_desc{
+    font-size: 20px;
+    padding-bottom: 30px;
+}

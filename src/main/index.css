@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgb(22, 22, 22);
+  background-color:rgb(250, 250, 250);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -95,4 +95,19 @@ html, body {
 
 .width100{
   width: 100%;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Puoi modificarne l'opacità o renderlo trasparente */
+  z-index: 95; /* Assicurati che sia sotto il Navbar e la Sidebar */
+  touch-action: none;
 }

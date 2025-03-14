@@ -1,0 +1,92 @@
+.Navbar_MainDiv{
+    background-color: rgb(14, 14, 14);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.103);
+    padding: 10px;
+    width: 100%;
+    color:rgb(253, 253, 253);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 101; 
+}
+
+.Navbar_MenuBtn{
+    font-size: 25px;
+    background-color: rgb(49, 49, 49);
+    width: 30px;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.Navbar_MenuBtn:hover{
+    background-color: rgb(95, 95, 95);
+    transition: all 0.3s ease;
+}
+
+.Navbar_MenuImg{
+    width: 25px;
+}
+
+.Navbar_MenuImg img{
+    width: 100%;
+}
+
+.Navbar_MenuText{
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 650;
+}
+
+.Sidebar_MainDiv {
+    margin-top: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px; 
+    background-color: rgb(26, 26, 26);
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Quando la sidebar è aperta, la trasformiamo per farla scorrere in vista */
+  .Sidebar_MainDiv.open {
+    transform: translateX(0);
+  }
+  
+  .Sidebar_Img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .Sidebar_Img img{
+    width: 60%;
+  }
+
+  .Sidebar_BtnMain{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color:rgb(255, 255, 255);
+  }
+
+  .Sidebar_Button{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 17px;
+    cursor: pointer;
+  }

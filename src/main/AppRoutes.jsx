@@ -11,8 +11,9 @@ import Songs from '../pages/Songs';
 import Team from '../pages/Team';
 import FileStorage from '../pages/FileStorage';
 import Analysis from '../pages/Analysis';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../navigation/Sidebar';
 import { AuthProvider, useAuth } from '../context/AuthContext';
+import Navbar from '../navigation/Navbar';
 
 // Componente per proteggere le rotte (mostra un loader se ancora in caricamento)
 const ProtectedRoute = ({ children }) => {
@@ -42,7 +43,7 @@ const AppRoutes = () => {
             path="/*"
             element={
               <ProtectedRoute>
-                  <Sidebar />
+                  <Navbar />
                     <Routes>
                       <Route path="/" element={<Dashboard />} />
                       <Route path="/dashboard" element={<Dashboard />} />
